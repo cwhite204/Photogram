@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "haml-rails", "~> 0.9"
 gem "paperclip", "~> 5.0.0"
 gem 'simple_form'
+gem 'bootstrap-sass', '3.2.0.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
