@@ -45,10 +45,11 @@ class PostsController < ApplicationController
   
   def destroy
     if @post.destroy
-      flash[:success] = “Post successfully deleted”
+      flash[:success] = "Post deleted."
       redirect_to posts_path
     else 
-      flash[:alert] = “Post deletion unsuccessful”  
+      flash[:alert] = "Post deletion failed."
+      redirect_to posts_path
     end
   end
 end
