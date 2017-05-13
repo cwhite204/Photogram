@@ -34,10 +34,15 @@ gem 'simple_form'
 gem 'bootstrap-sass', '3.2.0.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'capybara'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+    gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+  end
+  gem 'factory_girl_rails'
 end
 
 group :development do
