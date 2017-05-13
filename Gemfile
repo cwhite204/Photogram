@@ -35,6 +35,9 @@ gem 'bootstrap-sass', '3.2.0.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'capybara'
+gem 'devise'
+gem 'html2haml'
+gem 'html2slim'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
